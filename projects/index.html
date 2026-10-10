@@ -1,0 +1,75 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Elliot Mayo</title>
+  <link rel="stylesheet" href="/src/style.css" />
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="logo" href="/">EM<span>.</span></a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a class="active" href="/projects/">Projects</a>
+        <a href="/#about">About</a>
+        <a href="/#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="section container">
+    <p class="section-label">MY WORK</p>
+    <h1 style="font-size: clamp(48px, 8vw, 80px); margin-bottom: 18px;">Projects<span class="accent">.</span></h1>
+    <p style="color: #9ca8ba; max-width: 650px;">
+      A collection of projects exploring software, artificial
+      intelligence, robotics, and digital fabrication.
+    </p>
+
+    <div class="project-grid" style="margin-top: 55px;">
+      <article class="project-card" id="two-face">
+        <div class="project-visual visual-robotics">
+          <span>ROBOTICS / FABRICATION</span>
+          <div class="visual-symbol">⚙</div>
+        </div>
+        <div class="project-info">
+          <h3>Two Face Battlebot</h3>
+          <p>Combat robot design, prototyping, electronics, and fabrication.</p>
+        </div>
+      </article>
+
+      <article class="project-card" id="transformer">
+        <div class="project-visual visual-ai">
+          <span>MACHINE LEARNING</span>
+          <div class="visual-symbol">◇</div>
+        </div>
+        <div class="project-info">
+          <h3>Team Composition Transformer</h3>
+          <p>Transformer-based machine learning research.</p>
+        </div>
+      </article>
+
+      <article class="project-card" id="pic2print">
+        <div class="project-visual visual-design">
+          <span>PRODUCT DESIGN</span>
+          <div class="visual-symbol">✳</div>
+        </div>
+        <div class="project-info">
+          <h3>Pic2Print</h3>
+          <p>Personalized 3D-printed products and design.</p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Elliot Mayo</span>
+      <span>Built with Vite · Hosted on AWS</span>
+    </div>
+  </footer>
+</body>
+</html>
