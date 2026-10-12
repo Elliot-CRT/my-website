@@ -371,6 +371,7 @@ h2 {
 }
 
 .project-visual {
+  position: relative;
   height: 215px;
   padding: 18px;
   display: flex;
@@ -380,10 +381,24 @@ h2 {
 }
 
 .project-visual>span {
+  position: relative;
+  z-index: 1;
+  align-self: flex-start;
+  background: rgba(235, 248, 255, 0.9);
+  padding: 6px 8px;
+  border-radius: 4px;
   font-size: 11px;
   letter-spacing: 1.5px;
   font-weight: 700;
   color: #31546d;
+}
+
+.project-visual > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .visual-symbol {
