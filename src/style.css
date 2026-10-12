@@ -120,8 +120,25 @@ p {
 ========================================== */
 
 .hero {
-  padding-top: 130px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  column-gap: 48px;
+  padding-top: 20px;
   padding-bottom: 40px;
+}
+
+.hero > :not(.hero-headshot) {
+  grid-column: 1;
+}
+
+.hero-headshot {
+  grid-column: 2;
+  grid-row: 1 / span 4;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 16px;
+  align-self: start;
 }
 
 .eyebrow,
@@ -151,7 +168,7 @@ p {
 /* Hero Typography */
 
 .hero-heading {
-  margin: 30px 0;
+  margin: 0 0 30px;
 }
 
 .hero h1 {
@@ -515,6 +532,17 @@ h2 {
 ========================================== */
 
 @media (max-width: 850px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero-headshot {
+    grid-column: 1;
+    grid-row: 2;
+    width: 220px;
+    margin-bottom: 24px;
+  }
+
   .project-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -548,7 +576,7 @@ h2 {
   }
 
   .hero {
-    padding-top: 85px;
+    padding-top: 20px;
     padding-bottom: 25px;
   }
 
